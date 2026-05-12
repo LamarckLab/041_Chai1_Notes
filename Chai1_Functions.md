@@ -35,4 +35,17 @@ chai-lab fold \
   /data/lmk/chai1_outputs/ubiquitin/
 ```
 
+> **04 蛋白质结构预测 -- |单任务|远程 MSA + 远程 Template|自定义 seed|**
+
+加 `--seed 42` 让扩散采样可复现，实现完全一致的输出
+```bash
+CUDA_VISIBLE_DEVICES=3 \
+chai-lab fold \
+  --use-msa-server \
+  --use-templates-server \
+  --seed 42 \
+  /data/lmk/chai1_inputs/ubiquitin.fasta \
+  /data/lmk/chai1_outputs/ubiquitin/
+```
+
 ##### [Chai-1官方仓库](https://github.com/chaidiscovery/chai-lab)
