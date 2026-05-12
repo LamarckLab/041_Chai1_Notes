@@ -61,4 +61,22 @@ chai-lab fold \
   /data/lmk/chai1_outputs/ubiquitin/
 ```
 
+> [!IMPORTANT]
+> **06 蛋白质结构预测 -- |单任务|远程 MSA + 远程 Template|自定义 contact 约束|**
+
+
+
+该功能涉及的示例文件见目录 [custom contact constraints](./custom%20contact%20constraints/)
+
+加 `--constraint-path` 引入残基对接触约束（本质 CSV 格式），强制模型按指定 hot-spot 折叠
+```bash
+CUDA_VISIBLE_DEVICES=3 \
+chai-lab fold \
+  --use-msa-server \
+  --use-templates-server \
+  --constraint-path /data/lmk/chai1_inputs/7syz_contact.restraints \
+  /data/lmk/chai1_inputs/7syz_complex.fasta \
+  /data/lmk/chai1_outputs/7syz_complex/
+```
+
 ##### [Chai-1官方仓库](https://github.com/chaidiscovery/chai-lab)
