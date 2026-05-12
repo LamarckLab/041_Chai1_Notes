@@ -1,4 +1,4 @@
-<h1 align="center">🧬 Chai-1 部署与功能测试相关笔记</h1>
+<h1 align="center">🧬 Chai-1 部署与功能测试笔记</h1>
 
 <p align="center"><em>—— 2026.05.09</em></p>
 
