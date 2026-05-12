@@ -9,7 +9,7 @@ conda activate lmk_chai1
 ```
 
 ## 02  配置权重缓存目录
-> 把环境变量绑到 conda env 的激活钩子，激活环境时自动生效，让后续 chai-1 权重下载到 **/data/lmk/chai1_downloads**
+> 把环境变量绑到 conda env 的激活钩子，激活环境时自动生效， chai-1 权重的下载和读取在这 **/data/lmk/chai1_downloads**
 ```bash
 mkdir -p /data/lmk/chai1_downloads
 ```
