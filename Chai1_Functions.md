@@ -22,4 +22,17 @@ chai-lab fold \
   /data/lmk/chai1_outputs/ubiquitin/
 ```
 
+> **03 蛋白质结构预测 -- |单任务|远程 MSA + 远程 Template|自定义候选结构数目|**
+
+加 `--num-diffn-samples 10` 让 Chai-1 采 10 个候选结构（默认 5），时间约线性变长，显存不变
+```bash
+CUDA_VISIBLE_DEVICES=3 \
+chai-lab fold \
+  --use-msa-server \
+  --use-templates-server \
+  --num-diffn-samples 10 \
+  /data/lmk/chai1_inputs/ubiquitin.fasta \
+  /data/lmk/chai1_outputs/ubiquitin/
+```
+
 ##### [Chai-1官方仓库](https://github.com/chaidiscovery/chai-lab)
