@@ -48,4 +48,17 @@ chai-lab fold \
   /data/lmk/chai1_outputs/ubiquitin/
 ```
 
+> **05 蛋白质结构预测 -- |单任务|远程 MSA + 远程 Template|自定义 trunk recycles|**
+
+加 `--num-trunk-recycles 10` 增加 trunk 网络循环次数（默认 3），提高预测质量
+```bash
+CUDA_VISIBLE_DEVICES=3 \
+chai-lab fold \
+  --use-msa-server \
+  --use-templates-server \
+  --num-trunk-recycles 10 \
+  /data/lmk/chai1_inputs/ubiquitin.fasta \
+  /data/lmk/chai1_outputs/ubiquitin/
+```
+
 ##### [Chai-1官方仓库](https://github.com/chaidiscovery/chai-lab)
