@@ -2,6 +2,15 @@
 #### 该文档用于记录 server 上跑 Chai-1 的各种命令
 ---
 
+*路径配置*
+```bash
+输入目录:   /data/lmk/chai1_inputs       # FASTA 输入
+输出目录:   /data/lmk/chai1_outputs      # 预测结构 cif + npz 置信度文件
+权重缓存:   /data/lmk/chai1_downloads    # 模型权重缓存
+```
+
+---
+
 > **01 蛋白质结构预测 -- |单任务|远程 MSA + 远程 Template|默认参数|**
 ```bash
 CUDA_VISIBLE_DEVICES=3 \
